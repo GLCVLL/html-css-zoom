@@ -9,4 +9,65 @@
 
 body{
     font-family: sans-serif;
+    background-color: black;
 }
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/*header*/
+
+header{
+    flex-basis: 80px;
+    color: white;
+    position: fixed;
+    flex-shrink: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.viewbar{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.speaker{
+    background-color: grey;
+    padding: 10px;
+    margin-right: 10px; 
+    border-radius: 5px;
+    
+}
+
+.icon{
+    background-color: grey;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/*main*/
+
+main{
+    flex-grow: 1;
+    overflow-y: auto;
+    color: white;
+}
+
+/*footer*/
+
+footer{
+    flex-basis: 80px;
+    color: white;
+    background-color: #222222;
+    flex-shrink: 0;
+}
+
+
+
