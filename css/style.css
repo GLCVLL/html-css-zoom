@@ -54,6 +54,26 @@ main{
     color: white;
 }
 
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+}
+
+figure{
+    position: relative;
+    flex-basis: calc(100% / 8 - 10px);
+}
+
+.img-text{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 10px;
+    font-size: 12px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
 /*footer*/
 
 footer{
