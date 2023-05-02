@@ -10,21 +10,15 @@
 body{
     font-family: sans-serif;
     background-color: black;
-}
-
-.wrapper{
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+    padding-top: 80px;
 }
 
 /*header*/
 
 header{
-    flex-basis: 80px;
+    height: 80px;
     color: white;
     position: fixed;
-    flex-shrink: 0;
     top: 0;
     left: 0;
     width: 100%;
@@ -55,7 +49,7 @@ header{
 /*main*/
 
 main{
-    flex-grow: 1;
+    height: calc(100vh - 160px);
     overflow-y: auto;
     color: white;
 }
@@ -63,11 +57,61 @@ main{
 /*footer*/
 
 footer{
-    flex-basis: 80px;
+    height: 80px;
     color: white;
     background-color: #222222;
-    flex-shrink: 0;
 }
 
+.row{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.row-left{
+    flex-basis: 25%;
+    display: flex;
+}
+
+.row-center{
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.row-right{
+    flex-basis: 25%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.icons{
+    text-align: center;
+    padding: 10px;
+}
+
+.icons-text{
+    font-size: 12px;
+    margin-top: 10px;
+    color: white;
+}
+
+
+.icons-green{
+    text-align: center;
+    padding: 10px;
+    color: green;
+}
+
+.icons-end{
+    height: 80px;
+    font-size: 12px;
+    color: red;
+    background-color: lightgrey;
+    display: flex;
+    align-items: center;
+}
 
 
